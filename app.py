@@ -6,7 +6,7 @@ def herokudb():
     Host=''
     Database=''
     User=''
-    password=''
+    Password=''
     return psycopg2.connect(host=Host, database=Database, user=User, password=Password, sslmode='require')
 
 def gravar(v1, v2, v3):
