@@ -3,10 +3,10 @@ import psycopg2
 app = Flask(__name__)
 
 def herokudb():
-    Host=''
-    Database=''
-    User=''
-    Password=''
+    Host='ec2-54-247-96-169.eu-west-1.compute.amazonaws.com'
+    Database='d3a8gqg0padli2'
+    User='jdyfyykhyozlly'
+    Password='1d355ded77d6d943c0a5486518c564c97f3397b0e83239ae138ade8aa24ed7c4'
     return psycopg2.connect(host=Host, database=Database, user=User, password=Password, sslmode='require')
 
 def gravar(v1, v2, v3):
